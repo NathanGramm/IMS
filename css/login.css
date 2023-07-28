@@ -1,0 +1,83 @@
+body {
+    background: url("../Images/karsten-wurth-lsJ9jHKIqHg-unsplash.jpg") no-repeat center fixed;
+    background-size: cover;
+    
+}
+
+.loginHeader {
+    text-align: center;
+    margin-top: 13vw;
+    margin-bottom: 1vw;
+}
+
+.loginHeader h1 {
+    font-size: 70px;
+    color:white;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginHeader p {
+    color: white;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 0px;
+    display: inline-block
+}
+
+.loginHeader p:after {
+    content: '';
+    display: block;
+    height: 5px;
+    background: white;
+    margin: 0 auto;
+}
+
+.loginBody form {
+    margin:0 auto;
+    width: 400px;
+    background: rgba(0,0,0,0.5);
+    padding: 20px;
+    border: 3px solid white;
+    border-radius: 8px;
+}
+
+.loginInputContainer {
+    margin: 1vw;
+}
+
+.loginInputContainer label {
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginInputContainer input {
+    height: 30px;
+    width: 100%;
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginInputContainer ::placeholder {
+    font-style: italic;
+}
+
+.loginButtonContainer {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.loginButtonContainer button {
+    font-size: 20px;
+    padding: 8px 40px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+}
