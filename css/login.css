@@ -100,14 +100,32 @@ meter {
     all: revert;
 }
 
-html #loginBody{
-    background: url("../Images/karsten-wurth-lsJ9jHKIqHg-unsplash.jpg") no-repeat center fixed;
-    background-size: cover;
+@media screen and (max-width: 1920px){
+    html #loginBody {
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../Images/LoginBackground1920.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .homepageBanner {
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("../Images/collab-media-kGocua2hRfQ-unsplash.jpg") no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
 }
 
-html #homepageBody {
-    background: url("../Images/dan-meyers-w6X7XaolqA0-unsplash.jpg") no-repeat center fixed;
-    background-size: cover;
+@media screen and (min-width: 1921px) {
+    html #loginBody{
+        background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../Images/LoginBackground3840.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .homepageBanner {
+        background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url("../Images/collab-media-kGocua2hRfQ-unsplash.jpg") no-repeat center;
+        background-size: cover;
+        width: 100%;
+        height: 500px;
+    }
 }
 
 .loginHeader {
@@ -118,14 +136,15 @@ html #homepageBody {
 
 .loginHeader h1 {
     font-size: 70px;
-    color:white;
+    color: #ffdc9b;
+    font-weight: bold;
     padding: 0px;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .loginHeader p {
-    color: white;
+    color: #ffe4b3;
     font-size: 35px;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 0px;
@@ -136,7 +155,7 @@ html #homepageBody {
     content: '';
     display: block;
     height: 5px;
-    background: white;
+    background: #ffe4b3;
     margin: 0 auto;
 }
 
@@ -145,7 +164,7 @@ html #homepageBody {
     width: 400px;
     background: rgba(0,0,0,0.5);
     padding: 20px;
-    border: 3px solid white;
+    border: 3px solid #ffe4b3;
     border-radius: 8px;
 }
 
@@ -155,7 +174,7 @@ html #homepageBody {
 
 .loginInputContainer label {
     display: block;
-    color: white;
+    color: #ffe4b3;
     font-weight: bold;
     font-size: 25px;
     font-family: Arial, Helvetica, sans-serif;
@@ -169,7 +188,7 @@ html #homepageBody {
     height: 30px;
     width: 100%;
     border: 1px solid black;
-    background: white;
+    background: #ffe4b3;
     font-size: 18px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -192,7 +211,43 @@ html #homepageBody {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     padding: 8px 40px;
-    background: white;
+    background: #ffe4b3;
     border: none;
     border-radius: 5px;
+}
+
+.homepageHeader {
+    width: 100%;
+    height: 50px;
+    background: #ffe4b3;
+}
+
+.homepageContainer {
+    padding-top: 150px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    color: #ffe4b3;
+    font-family: Arial, Helvetica, sans-serif;
+    /* text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000,
+				-1px -1px 0 #000; */
+}
+
+.bannerHeader h1 {
+    font-size: 80px;
+    color: #ffdc9b;
+    font-weight: bold;
+}
+
+.bannerHeader p {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.bannerTagline {
+    font-size: 20px;
+    width: 60%;
+    color: #bfaa83;
 }
